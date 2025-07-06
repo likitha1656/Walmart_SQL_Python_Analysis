@@ -1,32 +1,60 @@
-# 🛒 Walmart Sales Data Analysis – End-to-End Project  
+# 🧠 Walmart Sales Data Analysis (SQL Project)
 
-## 📌 Problem Statement  
-This project analyzes **10,000 rows** of Walmart sales data, focusing on sales trends, revenue insights, and customer behaviors. The dataset includes details like **branch, city, category, unit price, quantity, date, time, payment method, rating,** and **profit margin**. The goal is to clean, transform, and analyze the data using **Python** and **SQL** to derive meaningful business insights.  
+## ✅ Project Goal
 
-## 🔍 Approach  
+To explore sales performance, customer behavior, and profit patterns across Walmart branches using SQL analysis.  
+The goal was to help identify business opportunities, improve decision-making, and understand what drives revenue and customer satisfaction.
 
-### 1️⃣ Data Cleaning (Python)  
-- Loaded the dataset using **Pandas**.  
-- Removed duplicates and handled missing values.  
-- Converted **date** and **time** columns into proper formats using `pd.to_datetime()`.  
-- Standardized data types for smooth SQL querying.
+---
 
-### 2️⃣ Data Storage (MySQL)  
-- Exported the cleaned dataset to **MySQL** using **SQLAlchemy**.  
-- Created structured tables and inserted data into **MySQL** for analysis.  
+## ❓ Key Business Questions
 
-### 3️⃣ Business Analysis (SQL)  
-Performed key business queries to uncover insights:  
-- 🔸 Identified **top-performing branches and product categories**.  
-- 🔸 Analyzed **revenue trends** across different years.  
-- 🔸 Found the **most preferred payment methods** per branch.  
-- 🔸 Calculated **profit margins** and highlighted high/low-profit branches.  
-- 🔸 Categorized transactions into **morning, afternoon, and evening shifts** to find peak sales hours.
+1. Which branch or city makes the highest total sales?
+2. Which product categories sell the most (in value and quantity)?
+3. What is the average profit margin by category and branch?
+4. What time of day sees the most customer transactions?
+5. Which payment methods are used the most?
+6. What is the average customer rating across branches?
+7. Which day of the week has the most sales?
+8. Which categories perform best in each city?
 
-### 4️⃣ Key Insights  
-- 📉 Certain branches experienced a **notable revenue drop** compared to the previous year. (Branches: WALM045, WALM047, WALM098, WALM033, WALM081)
-- 🏆 **Afternoon** transactions were the highest, indicating peak customer engagement.  
-- 💳 **E-wallets** were the most popular payment method across most branches.  
-- 💰 Some categories significantly contributed to **profit margins** across cities like Electronic accessories, Food and beverages, Health and beauty
+---
 
+## 📊 Key Insights (Results)
+
+- **Top-Performing Cities & Branches**  
+  Branches like `WALM009`, `WALM074`, and cities like `Weslaco` and `Waxahachie` had the highest total revenue.
+
+- **Most Popular Categories**  
+  `Fashion accessories` and `Home and lifestyle` dominated both in sales and quantity sold.
+
+- **Profit Margins**  
+  `Health and beauty` and `Food and beverages` offered the best average profit margins across locations.
+
+- **Peak Transaction Time**  
+  The **Afternoon** period consistently showed the highest number of customer transactions.
+
+- **Preferred Payment Methods**  
+  `Credit Card` and `E-wallet` were the most commonly used payment options across all branches.
+
+- **Customer Satisfaction**  
+  Branches such as `WALM004` and `WALM076` had the highest average customer ratings.
+
+- **Top Days for Sales**  
+  Most sales occurred on **Thursday**, followed by **Sunday** and **Friday**.
+
+- **Category Trends by City**  
+  Different cities had different best-selling categories — useful for city-specific inventory and marketing strategies.
+
+---
+
+## 📌 Summary
+
+The analysis helped identify:
+- High-performing locations
+- Profitable product categories
+- Customer habits and satisfaction
+- Operational opportunities by time, day, and region
+
+These findings can help Walmart make smarter decisions in sales strategy, inventory management, and store performance optimization.
 
